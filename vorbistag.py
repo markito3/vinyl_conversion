@@ -3,8 +3,8 @@
 import glob
 import os
 
-artist = "Smokey Robinson and the Miracles"
-album = "Anthology"
+artist = "Carole King"
+album = "Tapestry"
 file = open("tracks.txt", 'r')
 tracknumber = 0
 while True:
