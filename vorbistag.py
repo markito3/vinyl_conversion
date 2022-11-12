@@ -34,6 +34,8 @@ while True:
     title_escaped = title_escaped.replace(")", "\)")
     title_escaped = title_escaped.replace(";", ",")
     title_escaped = title_escaped.replace("?", ".")
+    title_escaped = title_escaped.replace("/", "-")
+    title_escaped = title_escaped.replace(":", "-")
     print(title_escaped)
     oggfile_out = tracknumber_str + "-" + title_escaped
     vc_command = "vorbiscomment -w -c tags.tmp " + oggfile_in + " " + oggfile_out.strip() + ".ogg"
